@@ -1,6 +1,6 @@
 <?php
 /**
-@author (Developed by) : Kingofseo
+@author (Developed by) : Ugurkan (Kingofseo)
 @date   : 09.11.2014
 List questions with the answers powered by Question2answer should work with all with no much at all big changes on the theme.
 **/
@@ -119,11 +119,3 @@ return (array) $ugurkan_array["data"];
 }
 
 }
-
-$kingofseo=new q2a(["site" => "http://www.question2answer.org/qa", "page" => $_GET["p"]]);
-
-print_r( $kingofseo->list_questions("recent", true) );
-
-/*
-print_r( $kingofseo->list_answers("http://www.question2answer.org/qa/40786/matches-blocked-ip-addresses-gives-the-wrong-message") );
-*/
